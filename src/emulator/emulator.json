@@ -1,0 +1,221 @@
+{
+   "cues": [
+      {
+         "type": "boolean",
+         "event": "651",
+         "trigger": true,
+         "actions": [
+            {
+               "state": "651",
+               "type": "boolean",
+               "logic": "set",
+               "value": true
+            },
+            {
+               "state": "652",
+               "type": "boolean",
+               "logic": "set",
+               "value": false
+            },
+            {
+               "state": "653",
+               "type": "boolean",
+               "logic": "set",
+               "value": false
+            },
+            {
+               "state": "654",
+               "type": "boolean",
+               "logic": "set",
+               "value": false
+            },
+            {
+               "state": "655",
+               "type": "boolean",
+               "logic": "set",
+               "value": false
+            },
+            {
+               "state": "1521",
+               "type": "boolean",
+               "logic": "set",
+               "value": true
+            },
+            {
+               "state": "1522",
+               "type": "boolean",
+               "logic": "set",
+               "value": true
+            },
+            {
+               "state": "nav.items.size",
+               "type": "number",
+               "logic": "set",
+               "value": 1
+            }
+         ]
+      },
+      {
+         "type": "boolean",
+         "event": "652",
+         "trigger": true,
+         "actions": [
+            {
+               "state": "651",
+               "type": "boolean",
+               "logic": "set",
+               "value": false
+            },
+            {
+               "state": "652",
+               "type": "boolean",
+               "logic": "set",
+               "value": true
+            },
+            {
+               "state": "653",
+               "type": "boolean",
+               "logic": "set",
+               "value": false
+            },
+            {
+               "state": "654",
+               "type": "boolean",
+               "logic": "set",
+               "value": false
+            },
+            {
+               "state": "655",
+               "type": "boolean",
+               "logic": "set",
+               "value": false
+            },
+            {
+               "state": "nav.items.size",
+               "type": "number",
+               "logic": "set",
+               "value": 4
+            }
+         ]
+      },
+      {
+         "type": "boolean",
+         "event": "13",
+         "trigger": true,
+         "actions": [
+            {
+               "state": "11",
+               "type": "boolean",
+               "logic": "set",
+               "value": false
+            },
+            {
+               "state": "12",
+               "type": "boolean",
+               "logic": "set",
+               "value": false
+            },
+            { "state": "13", "type": "boolean", "logic": "set", "value": true },
+            {
+               "state": "14",
+               "type": "boolean",
+               "logic": "set",
+               "value": false
+            },
+            { "state": "15", "type": "boolean", "logic": "set", "value": false }
+         ]
+      },
+      {
+         "type": "boolean",
+         "event": "14",
+         "trigger": true,
+         "actions": [
+            {
+               "state": "11",
+               "type": "boolean",
+               "logic": "set",
+               "value": false
+            },
+            {
+               "state": "12",
+               "type": "boolean",
+               "logic": "set",
+               "value": false
+            },
+            {
+               "state": "13",
+               "type": "boolean",
+               "logic": "set",
+               "value": false
+            },
+            { "state": "14", "type": "boolean", "logic": "set", "value": true },
+            { "state": "15", "type": "boolean", "logic": "set", "value": false }
+         ]
+      },
+      {
+         "type": "boolean",
+         "event": "15",
+         "trigger": true,
+         "actions": [
+            {
+               "state": "11",
+               "type": "boolean",
+               "logic": "set",
+               "value": false
+            },
+            {
+               "state": "12",
+               "type": "boolean",
+               "logic": "set",
+               "value": false
+            },
+            {
+               "state": "13",
+               "type": "boolean",
+               "logic": "set",
+               "value": false
+            },
+            {
+               "state": "14",
+               "type": "boolean",
+               "logic": "set",
+               "value": false
+            },
+            { "state": "15", "type": "boolean", "logic": "set", "value": true }
+         ]
+      },
+      {
+         "type": "boolean",
+         "event": "100",
+         "trigger": true,
+         "actions": [{ "state": "100", "type": "boolean", "logic": "toggle" }]
+      },
+      {
+         "type": "boolean",
+         "event": "6",
+         "trigger": true,
+         "actions": [{ "state": "6", "type": "boolean", "logic": "toggle" }]
+      }
+   ],
+   "onStart": [
+      { "state": "11", "type": "boolean", "value": true },
+      { "state": "showHome", "type": "boolean", "value": true },
+      { "state": "nav.items.size", "type": "number", "value": 20 },
+      { "state": "641", "type": "string", "value": "Living" },
+      { "state": "642", "type": "string", "value": "Dining" },
+      { "state": "643", "type": "string", "value": "Kitchen" },
+      { "state": "644", "type": "string", "value": "Breakfast" },
+      {
+         "state": "2",
+         "type": "string",
+         "value": "Text 2"
+      },
+      { "state": "3", "type": "string", "value": "join 3" },
+      {
+         "state": "4",
+         "type": "string",
+         "value": "Serial Join 4 text telling a long story"
+      },
+      { "state": "36", "type": "number", "value": 5000 }
+   ]
+}

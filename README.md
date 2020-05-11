@@ -1,3 +1,7 @@
+This is the CH5 Empty Starter Template
+
+BELOW HERE STANDARD REACT
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

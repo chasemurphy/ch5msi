@@ -1,34 +1,45 @@
 {
-  "name": "ch5msi",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+   "name": "ch5msi",
+   "homepage": ".",
+   "version": "0.1.0",
+   "private": true,
+   "dependencies": {
+      "@crestron/ch5-crcomlib": "^1.0.0",
+      "@crestron/ch5-utilities-cli": "^0.1.47",
+      "@testing-library/jest-dom": "^4.2.4",
+      "@testing-library/react": "^9.3.2",
+      "@testing-library/user-event": "^7.1.2",
+      "ncp": "^2.0.0",
+      "node-sass": "^4.14.0",
+      "react": "^16.13.1",
+      "react-dom": "^16.13.1",
+      "react-router-dom": "^5.1.2",
+      "react-scripts": "3.4.1",
+      "react-transition-group": "^4.3.0"
+   },
+   "scripts": {
+      "start": "yarn copylib && react-scripts start",
+      "build": "react-scripts build",
+      "test": "react-scripts test",
+      "eject": "react-scripts eject",
+      "copylib": "ncp ./node_modules/@crestron/ch5-crcomlib/build_bundles/umd/cr-com-lib.js public/cr-com-lib.js",
+      "archive": "yarn copylib && ch5-cli archive -p ch5msi -d build -o dist",
+      "deploy": "ch5-cli deploy -H 192.168.1.181 -t touchscreen dist/ch5msi.ch5z",
+      "all": "yarn copylib && yarn build && yarn archive && yarn deploy"
+   },
+   "eslintConfig": {
+      "extends": "react-app"
+   },
+   "browserslist": {
+      "production": [
+         ">0.2%",
+         "not dead",
+         "not op_mini all"
+      ],
+      "development": [
+         "last 1 chrome version",
+         "last 1 firefox version",
+         "last 1 safari version"
+      ]
+   }
 }

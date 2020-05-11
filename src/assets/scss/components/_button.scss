@@ -1,0 +1,22 @@
+@import '../abstracts/variables';
+
+.Button {
+   padding: 1rem;
+   border: 2px solid $color-outline;
+   border-radius: $border-radius-small;
+   background-color: $color-primary;
+
+   &:focus {
+      border: 2px solid $color-outline;
+      outline: none;
+   }
+
+   &:active {
+      transform: translateY(0.2rem);
+      background-color: $color-primary-clicked;
+   }
+
+   &.active {
+      background-color: $color-secondary;
+   }
+}
