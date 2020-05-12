@@ -191,6 +191,18 @@
          "actions": [{ "state": "100", "type": "boolean", "logic": "toggle" }]
       },
       {
+         "type": "n",
+         "event": "1",
+         "trigger": "&change",
+         "actions": [
+            {
+               "state": "1",
+               "type": "n",
+               "logic": "link"
+            }
+         ]
+      },
+      {
          "type": "boolean",
          "event": "6",
          "trigger": true,
@@ -201,6 +213,7 @@
       { "state": "11", "type": "boolean", "value": true },
       { "state": "showHome", "type": "boolean", "value": true },
       { "state": "nav.items.size", "type": "number", "value": 20 },
+      { "state": "1", "type": "number", "value": 3655 },
       { "state": "641", "type": "string", "value": "Living" },
       { "state": "642", "type": "string", "value": "Dining" },
       { "state": "643", "type": "string", "value": "Kitchen" },

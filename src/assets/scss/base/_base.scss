@@ -1,21 +1,37 @@
-* ,
+*,
 *::after,
-*::before{
-    margin:0;
-    padding:0;
-    box-sizing: inherit;
+*::before {
+   margin: 0;
+   padding: 0;
+   box-sizing: inherit;
 }
 
-
 html {
-    // we want 10px for easier rem math. Standard Base is 16pt, so 
-    font-size: 62.5%; 
-    
+   // we want 10px for easier rem math. Standard Base is 16pt, so
+   font-size: 62.5%;
+   margin: 0;
+   padding: 0;
+
+   @include respond(tabLand) {
+      font-size: 56.25%;
+   }
+
+   @include respond(tabPort) {
+      font-size: 50%; //1rem = 8px; 8/16
+   }
+
+   @include respond(phone) {
+      font-size: 45%;
+   }
+
+   @include respond(bigDesk) {
+      font-size: 75%;
+   }
 }
 
 body {
-    box-sizing: border-box;
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   background-color: $color-bg;
 }
-
-
-

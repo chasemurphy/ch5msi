@@ -1,0 +1,26 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+.ch5-button--primary button {
+   font-family: inherit;
+   font-size: 2rem;
+   padding: 2rem;
+   margin: 2rem;
+   background-color: $color-primary;
+   color: $color-text-main;
+   border-radius: $border-radius-large;
+   border: 2px solid $color-outline;
+   transition: all 0.2s;
+   @include shadow;
+
+   &:focus {
+      border: 2px solid $color-outline;
+      outline: none;
+   }
+}
+
+.ch5-button--pressed button {
+   background-color: $color-secondary;
+   transform: translateY(0.2rem);
+   @include shadowActive;
+}

@@ -1,24 +1,28 @@
 body {
-   font-family: 'Lato';
+   font-family: $font-family-main;
    font-weight: 400;
    /* font-size: 16px; */
    line-height: 1.7;
    color: $color-text-main;
-   padding: 3rem;
+}
+
+.heading {
+   max-height: 10%;
+   background-color: black;
 }
 
 .heading-primary {
-   color: $color-text-main;
    text-transform: uppercase;
-
    backface-visibility: hidden;
    margin-bottom: 1rem;
 
    &--main {
+      font-family: $font-family-accent;
+      color: $color-secondary;
       display: block;
-      font-size: 60px;
+      font-size: 5rem;
       font-weight: 400;
-      letter-spacing: 35px;
+      letter-spacing: 1rem;
       animation: moveInLeft 2s;
       animation-delay: 0.5s;
       animation-timing-function: ease-out;

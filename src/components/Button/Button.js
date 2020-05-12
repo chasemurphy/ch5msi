@@ -26,6 +26,8 @@ class Button extends Component {
    }
 
    componentDidMount() {
+      this.setState({ classState: 'Button ' + this.props.class });
+
       window.CrComLib.subscribeState(
          'b',
          this.join,

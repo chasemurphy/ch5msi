@@ -1,10 +1,17 @@
 @import '../abstracts/variables';
+@import '../abstracts/mixins';
 
 .Button {
-   padding: 1rem;
+   font-family: inherit;
+   font-size: 2rem;
+   padding: 2rem;
+   margin: 2rem;
    border: 2px solid $color-outline;
-   border-radius: $border-radius-small;
-   background-color: $color-primary;
+   border-radius: $border-radius-large;
+   background-color: transparent;
+   color: $color-text-main;
+   transition: all 0.2s;
+   @include shadow;
 
    &:focus {
       border: 2px solid $color-outline;
@@ -13,10 +20,12 @@
 
    &:active {
       transform: translateY(0.2rem);
-      background-color: $color-primary-clicked;
+      background-color: $color-secondary;
+      @include shadowActive;
    }
 
    &.active {
       background-color: $color-secondary;
+      @include shadowActive;
    }
 }

@@ -1,4 +1,6 @@
 //Colors
+$color-bg: #bfbfbf;
+
 $color-primary: #bfbfbf;
 $color-primary-clicked: #999;
 
@@ -10,7 +12,7 @@ $color-accent-light: #9aa8bf;
 
 $color-text-main: #242423;
 
-$color-outline: $color-text-main;
+$color-outline: #666666;
 
 $color-white: #fff;
 $color-black: #000;
@@ -23,8 +25,11 @@ $gutter-horizontal: 2rem;
 //font
 $default-font-size: 1.6rem;
 $font-weight-light: 100;
+$font-family-main: 'Raleway', sans-serif;
+$font-family-accent: 'Limelight', cursive;
 
 $tile-gutter: 1rem;
 
 //border
 $border-radius-small: 5px;
+$border-radius-large: 10px;

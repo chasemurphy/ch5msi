@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import Emulator from './emulator/emulator';
+//import Emulator from './emulator/emulator';
 import Button from './components/Button/Button';
+import Slider from './components/Slider/Slider';
 
 import './App.css';
 
@@ -9,14 +10,23 @@ class App extends Component {
       return (
          <div className='App'>
             {/* Remove Emulator for Live */}
-            <Emulator />
-            <h1 className='heading-primary'>CH5 Start Page </h1>
+            {/* <Emulator /> */}
+            <div className='heading'>
+               <h1 className='heading-primary--main u-center-text'>
+                  CH5 MSI Template
+               </h1>
+            </div>
             <ch5-button
                type='primary'
                label='Ch5 Button'
                sendEventonClick='1'
+               customClass='u-center-text'
             ></ch5-button>
-            <Button label='Custom Button' press='2' />
+            <div className='u-center-text'>
+               <Button label='Custom Button' press='2' class='u-center-text' />
+            </div>
+
+            <Slider />
          </div>
       );
    }

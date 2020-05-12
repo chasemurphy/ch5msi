@@ -11,10 +11,14 @@
       "@testing-library/user-event": "^7.1.2",
       "ncp": "^2.0.0",
       "node-sass": "^4.14.0",
+      "numeral": "^2.0.6",
       "react": "^16.13.1",
       "react-dom": "^16.13.1",
+      "react-nouislider": "^2.0.1",
+      "react-numeral": "^1.0.1",
       "react-router-dom": "^5.1.2",
       "react-scripts": "3.4.1",
+      "react-slider": "^1.0.6",
       "react-transition-group": "^4.3.0"
    },
    "scripts": {
